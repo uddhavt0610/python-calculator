@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: calculator
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: calculator
-        image: uddhavt89/python-calculator:v1
+        image: uddhavt89/python-calculator:v2
         ports:
         - containerPort: 5000
